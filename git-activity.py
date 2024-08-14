@@ -21,7 +21,7 @@ def conseguir_actividad(username):
         print(f"URLError: {e.reason} for {url}")
         return []
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        print(f"Error desconocido: {e}")
         return []
 
 #Funcion para mostrar por consola la actividad encontrada en GitHub
@@ -42,12 +42,12 @@ def mostrar_actividad(events):
             action = event.get("payload", {}).get("action")
             print(f"{action.capitalize()} un problema en {repo_name}")
         elif event_type == "WatchEvent":
-            print(f"Visto el repositorio {repo_name}")
+            print(f"Puntuado el repositorio {repo_name}")
         elif event_type == "CreateEvent":
             print(f"Creado el repositorio {repo_name}")
 
     for repo_name, count in commit_counts.items():
-        print(f"Push {count} commits a {repo_name}")
+        print(f"Subido {count} commits a {repo_name}")
 
 
 username = sys.argv[1]
