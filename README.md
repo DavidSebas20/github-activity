@@ -7,7 +7,6 @@ Esta aplicación de línea de comandos (CLI) permite obtener y mostrar la activi
 ## Requisitos
 
 - Python 3.x
-- Sin librerías externas (se usa `urllib` para manejar las solicitudes HTTP y `json` para manejar los datos)
 
 ## Instalación
 
@@ -34,7 +33,7 @@ python github_activity.py DavidSebas20
 ```
 Salida esperada:
 ```bash
-Push 5 commits a DavidSebas20/taskt-tracker-cli
-Push 3 commits a DavidSebas20/redes-ruta-mas-corta
+Subido 5 commits a DavidSebas20/taskt-tracker-cli
+Subido 3 commits a DavidSebas20/redes-ruta-mas-corta
 Creado el repositorio DavidSebas20/taskt-tracker-cli
 ```
